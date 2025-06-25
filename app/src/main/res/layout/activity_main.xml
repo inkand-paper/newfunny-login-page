@@ -41,6 +41,7 @@
             app:errorEnabled="true"
             app:hintEnabled="true"
             app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="@id/LoginTV"
             app:layout_constraintStart_toStartOf="@id/LoginTV"
             app:layout_constraintTop_toBottomOf="@+id/LoginTV">
@@ -49,6 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:inputType="textPersonName"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -64,7 +66,9 @@
             app:boxStrokeWidth="1dp"
             app:errorEnabled="true"
             app:hintEnabled="true"
+            android:textColorHint="@color/black"
             app:hintTextColor="@color/black"
+
             app:layout_constraintEnd_toEndOf="@id/Layout1"
             app:layout_constraintStart_toStartOf="@id/Layout1"
             app:layout_constraintTop_toBottomOf="@+id/Layout1">
@@ -73,6 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:inputType="textEmailAddress"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -90,6 +95,8 @@
             app:errorEnabled="true"
             app:hintEnabled="true"
             app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
+
             app:layout_constraintEnd_toEndOf="@id/Layout2"
             app:layout_constraintStart_toStartOf="@id/Layout2"
             app:layout_constraintTop_toBottomOf="@+id/Layout2">
@@ -98,6 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:inputType="textPassword"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -114,6 +122,7 @@
             app:errorEnabled="true"
             app:hintEnabled="true"
             app:hintTextColor="@color/black"
+            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="@id/Layout3"
             app:layout_constraintStart_toStartOf="@id/Layout3"
             app:layout_constraintTop_toBottomOf="@+id/Layout3">
@@ -122,6 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
+                android:inputType="textPassword"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -179,7 +189,6 @@
             android:id="@+id/LinearLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="100dp"
             android:layout_marginTop="26dp"
             android:orientation="horizontal"
             android:weightSum="3"
@@ -188,55 +197,49 @@
             app:layout_constraintTop_toBottomOf="@+id/LinearLayout1">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
                 android:layout_weight="1"
+                android:scaleType="fitEnd"
                 android:src="@drawable/google" />
-
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
                 android:layout_weight="1"
                 android:src="@drawable/discord" />
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
                 android:layout_weight="1"
+                android:scaleType="fitStart"
                 android:src="@drawable/github" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/AskTV"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="60dp"
             android:layout_marginTop="26dp"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            app:layout_constraintEnd_toEndOf="@id/LinearLayout2"
+            android:layout_marginStart="115dp"
+            android:text="Already have an account?"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="italic"
             app:layout_constraintStart_toStartOf="@id/LinearLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/LinearLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="LOGIN"
+            android:layout_marginEnd="115dp"
+            android:textColor="#B603BC69"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/LinearLayout2"
+            app:layout_constraintEnd_toEndOf="@id/LinearLayout2" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Already have an account?"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textAlignment="textEnd"
-                android:textStyle="italic" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:layout_weight="1"
-                android:text="LOGIN"
-                android:textAlignment="center"
-                android:textColor="#B603BC69"
-                android:textSize="14sp" />
-        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
