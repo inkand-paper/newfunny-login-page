@@ -36,12 +36,12 @@
             android:layout_marginHorizontal="40dp"
             android:layout_marginTop="30dp"
             android:hint="UserName"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidth="1dp"
             app:errorEnabled="true"
             app:hintEnabled="true"
             app:hintTextColor="@color/black"
-            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="@id/LoginTV"
             app:layout_constraintStart_toStartOf="@id/LoginTV"
             app:layout_constraintTop_toBottomOf="@+id/LoginTV">
@@ -49,8 +49,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
                 android:inputType="textPersonName"
+                android:maxLines="1"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -62,11 +62,11 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="Email"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidth="1dp"
             app:errorEnabled="true"
             app:hintEnabled="true"
-            android:textColorHint="@color/black"
             app:hintTextColor="@color/black"
 
             app:layout_constraintEnd_toEndOf="@id/Layout1"
@@ -76,8 +76,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
                 android:inputType="textEmailAddress"
+                android:maxLines="1"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -90,13 +90,14 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="password"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidth="1dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
             app:errorEnabled="true"
             app:hintEnabled="true"
             app:hintTextColor="@color/black"
-            android:textColorHint="@color/black"
-
             app:layout_constraintEnd_toEndOf="@id/Layout2"
             app:layout_constraintStart_toStartOf="@id/Layout2"
             app:layout_constraintTop_toBottomOf="@+id/Layout2">
@@ -104,8 +105,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
                 android:inputType="textPassword"
+                android:maxLines="1"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -117,12 +118,14 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:hint="Confirm password"
+            android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidth="1dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
             app:errorEnabled="true"
             app:hintEnabled="true"
             app:hintTextColor="@color/black"
-            android:textColorHint="@color/black"
             app:layout_constraintEnd_toEndOf="@id/Layout3"
             app:layout_constraintStart_toStartOf="@id/Layout3"
             app:layout_constraintTop_toBottomOf="@+id/Layout3">
@@ -130,8 +133,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
                 android:inputType="textPassword"
+                android:maxLines="1"
                 android:textColor="@color/black">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -202,6 +205,7 @@
                 android:layout_weight="1"
                 android:scaleType="fitEnd"
                 android:src="@drawable/google" />
+
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -220,26 +224,26 @@
             android:id="@+id/AskTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
             android:layout_marginStart="115dp"
+            android:layout_marginTop="26dp"
             android:text="Already have an account?"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="@id/LinearLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/LinearLayout2"/>
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout2" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
-            android:text="LOGIN"
             android:layout_marginEnd="115dp"
+            android:text="LOGIN"
             android:textColor="#B603BC69"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/LinearLayout2"
-            app:layout_constraintEnd_toEndOf="@id/LinearLayout2" />
-
+            app:layout_constraintEnd_toEndOf="@id/LinearLayout2"
+            app:layout_constraintTop_toBottomOf="@id/LinearLayout2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
