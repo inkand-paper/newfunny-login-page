@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/LoginTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="120dp"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:hint="UserName"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/LoginTV"
+            app:layout_constraintStart_toStartOf="@id/LoginTV"
+            app:layout_constraintTop_toBottomOf="@+id/LoginTV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Email"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/Layout1"
+            app:layout_constraintStart_toStartOf="@id/Layout1"
+            app:layout_constraintTop_toBottomOf="@+id/Layout1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="password"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/Layout2"
+            app:layout_constraintStart_toStartOf="@id/Layout2"
+            app:layout_constraintTop_toBottomOf="@+id/Layout2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Confirm password"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="1dp"
+            app:errorEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/Layout3"
+            app:layout_constraintStart_toStartOf="@id/Layout3"
+            app:layout_constraintTop_toBottomOf="@+id/Layout3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/SignupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:text="Sign Up"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="@id/Layout4"
+            app:layout_constraintStart_toStartOf="@id/Layout4"
+            app:layout_constraintTop_toBottomOf="@+id/Layout4" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            app:layout_constraintEnd_toEndOf="@id/SignupBtn"
+            app:layout_constraintStart_toStartOf="@id/SignupBtn"
+            app:layout_constraintTop_toBottomOf="@id/SignupBtn">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="7.3"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="7.5"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="130dp"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintEnd_toEndOf="@id/LinearLayout1"
+            app:layout_constraintStart_toStartOf="@+id/LinearLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/google" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/discord" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/github" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="@id/LinearLayout2"
+            app:layout_constraintStart_toStartOf="@id/LinearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Already have an account?"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="LOGIN"
+                android:textColor="#B603BC69"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
